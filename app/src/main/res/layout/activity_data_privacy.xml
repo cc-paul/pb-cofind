@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DataPrivacy">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="#191645" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:id="@+id/lnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <ImageView
+                            android:src="@drawable/icn_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/man_bold"
+                            android:gravity="center"
+                            android:text="Data Privacy Consent"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#F3F5F9"></View>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_margin="20sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="#191645"
+                            android:textSize="25dp"
+                            android:fontFamily="@font/man_bold"
+                            android:gravity="center"
+                            android:text="E-Servicio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginBottom="20sp"
+                            android:id="@+id/imgLogo"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_semi"
+                            android:text="By signing this consent form, I grant my free, voluntary, and unconditional consent to the collection and processing of all Personal Data (as defined below), and account or transaction information or records (collectively, the 'Information') relating to me disclosed by me in person to the information database system of in accordance with Republic Act (R.A.) 10173, otherwise known as the “Data Privacy Act of 2012” of the Republic of the Philippines, including its Implementing Rules and Regulations (IRR) as well as all other guidelines and issuances by the National Privacy Commission (NPC).
+\n\n\n
+I understand that my “Personal Data” means any information, whether recorded in a material form or not, (a) from which the identity of an individual is apparent or can be reasonably and directly ascertained by the entity holding the information, or when put together with other information would directly and certainly identify an individual, (b) about an individual’s address, age, and sex. (c) referring to any proceeding for any offense committed or alleged to have been committed by such individual, the disposal of such proceedings, or the sentence of any court in such proceedings, and (d) issued by government agencies peculiar to an individual which includes, but not limited to, social security numbers and licenses."
+                            android:textSize="12dp" />
+
+                        <CheckBox
+                            android:layout_marginBottom="30dp"
+                            android:id="@+id/chkAgree"
+                            android:textColor="#757575"
+                            android:fontFamily="@font/man_bold"
+                            android:text="I Agree"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"/>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/lnProceed"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/layout_bg"
+                android:backgroundTint="#191645"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/man_semi"
+                    android:gravity="center"
+                    android:text="Proceed to Registration"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

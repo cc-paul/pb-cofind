@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:background="@color/white"
+    android:backgroundTint="#ffffff">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/gray_btn_bg_color"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/man_semi"
+                        android:text="Reservation Details"
+                        android:textColor="#546679"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DFE8EE" />
+
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                app:cardBackgroundColor="#F0F4F7"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="0dp">
+
+                                <TextView
+                                    android:layout_margin="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/man_reg"
+                                    android:singleLine="true"
+                                    android:text="Freelancer's Information"
+                                    android:textColor="#16222E"
+                                    android:textSize="10dp" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgProfile"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/default_pic"
+                                app:civ_border_color="@color/gray_btn_bg_color"
+                                app:civ_border_width="0.5dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Name : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvFreelancersName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Name"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Address : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvFreelancersAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Address"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Mobile Number : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvFreelancersMobileNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Mobile Number"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Email : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvFreelancersEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Email Address"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                app:cardBackgroundColor="#F0F4F7"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="0dp">
+
+                                <TextView
+                                    android:layout_margin="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/man_reg"
+                                    android:singleLine="true"
+                                    android:text="Customer's Information"
+                                    android:textColor="#16222E"
+                                    android:textSize="10dp" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgProfileCustomer"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/default_pic"
+                                app:civ_border_color="@color/gray_btn_bg_color"
+                                app:civ_border_width="0.5dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Name : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvCustomersName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Name"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Address : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvCustomersAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Address"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Mobile Number : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvCustomersMobileNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Mobile Number"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Email : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvCustomersEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Email Address"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:cardBackgroundColor="#F0F4F7"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="0dp">
+
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/man_reg"
+                            android:singleLine="true"
+                            android:text="Service Details"
+                            android:textColor="#16222E"
+                            android:textSize="10dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Type of Service : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvTypeOfService"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Freelancer's Name"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Venue : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvVenue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="Old Balara Quezon City"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_semi"
+                                    android:text="Date : "
+                                    android:textColor="#546679"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/tvDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_reg"
+                                    android:text="08/29/1993"
+                                    android:textColor="#546679"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_semi"
+                                    android:text="Time : "
+                                    android:textColor="#546679"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:id="@+id/tvTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_reg"
+                                    android:text="10:30 PM - 11:30 PM"
+                                    android:textColor="#546679"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Amount : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvBidAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="P700"
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="Remarks : "
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                            <TextView
+                                android:id="@+id/tvRemarks"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_reg"
+                                android:text="often used in a form, to collect user inputs like comments or reviews. A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier)."
+                                android:textColor="#546679"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/vwDivider"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#DFE8EE" />
+
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/lnYours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@drawable/layout_bg"
+                            android:backgroundTint="#FF5722"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textSize="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/man_semi"
+                                android:gravity="center"
+                                android:text="Your Customer"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/lnReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/layout_bg"
+                            android:backgroundTint="#E91E63"
+                            android:gravity="center">
+
+                            <TextView
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textSize="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/man_semi"
+                                android:gravity="center"
+                                android:text="Report"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:id="@+id/lnDone"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/layout_bg"
+                            android:backgroundTint="#191645"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_marginRight="25dp"
+                                android:layout_marginLeft="25dp"
+                                android:textSize="11dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/man_semi"
+                                android:gravity="center"
+                                android:text="Mark as Done"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

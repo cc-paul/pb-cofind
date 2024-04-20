@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Messaging">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="#191645" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:id="@+id/lnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icn_back" />
+
+                        <TextView
+                            android:id="@+id/tvFullName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/man_bold"
+                            android:gravity="center"
+                            android:text="Freelancers Name"
+                            android:visibility="visible"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#F3F5F9"></View>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChats"
+            tools:listitem="@layout/rv_chats"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#F3F5F9"></View>
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:id="@+id/lnCommentContainer"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/layout_bg">
+
+                <EditText
+                    android:minHeight="35dp"
+                    android:hint="Type a message"
+                    android:id="@+id/etMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/man_semi"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:paddingStart="10sp"
+                    android:paddingEnd="10sp"
+                    android:textSize="13sp"></EditText>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgSend"
+                android:gravity="center"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="27dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/icn_send" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BidDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="#191645" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize">
+
+                <LinearLayout
+                    android:id="@+id/lnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icn_back" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/man_bold"
+                            android:gravity="center"
+                            android:text="Personal Info and Schedule Details"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#F3F5F9"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgProfile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="top"
+                            android:src="@drawable/default_pic"
+                            app:civ_border_color="@color/gray_btn_bg_color"
+                            app:civ_border_width="0.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:backgroundTint="#EFEFEF"
+                                android:padding="10dp"
+                                android:src="@drawable/icn_people"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/man_bold"
+                                android:gravity="left|center_vertical"
+                                android:text="Personal Information" />
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:weightSum="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_weight="3"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Bidder's Name" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:id="@+id/etFirstName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:inputType="textVisiblePassword"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Middle Name" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:hint="NA"
+                                        android:enabled="false"
+                                        android:id="@+id/etMiddleName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:inputType="textVisiblePassword"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Last Name" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:id="@+id/etLastName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:inputType="textVisiblePassword"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_semi"
+                            android:gravity="center"
+                            android:text="Complete Address" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/layout_bg">
+
+
+                            <EditText
+                                android:enabled="false"
+                                android:id="@+id/etAddress"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="4dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:ems="10"
+                                android:fontFamily="@font/man_semi"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:paddingStart="10sp"
+                                android:paddingEnd="10sp"
+                                android:textSize="13sp"></EditText>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Mobile Number" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:id="@+id/etMobileNumber"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:inputType="number"
+                                        android:maxLength="11"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Email Address" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:id="@+id/etEmailAddress"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_semi"
+                            android:gravity="center"
+                            android:text="Sex" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:enabled="false"
+                                android:id="@+id/rdMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_bold"
+                                android:text="Male"
+                                android:textColor="?attr/colorControlNormal" />
+
+                            <RadioButton
+                                android:enabled="false"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/rdFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_bold"
+                                android:text="Female"
+                                android:textColor="?attr/colorControlNormal" />
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/rounded_border_edittext"
+                                android:backgroundTint="#EFEFEF"
+                                android:padding="10dp"
+                                android:src="@drawable/icn_calendar"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/man_bold"
+                                android:gravity="left|center_vertical"
+                                android:text="Schedule Details" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_semi"
+                            android:gravity="center"
+                            android:text="Type of Service" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/layout_bg">
+
+
+                            <EditText
+                                android:enabled="false"
+                                android:hint="No Service Indicated"
+                                android:id="@+id/etTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="4dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:ems="10"
+                                android:fontFamily="@font/man_semi"
+                                android:inputType="textVisiblePassword"
+                                android:maxLines="1"
+                                android:paddingStart="10sp"
+                                android:paddingEnd="10sp"
+                                android:textSize="13sp"></EditText>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Date" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:id="@+id/etDate"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:hint="Select Date >"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Minimum Rate" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:id="@+id/etMinimumRate"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:hint="Enter Rate"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:inputType="numberDecimal"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Offer" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:id="@+id/etOffer"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:hint="0"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:inputType="numberDecimal"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="Start Time" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:id="@+id/etFrom"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:hint="Select Time From >"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/man_semi"
+                                    android:gravity="center"
+                                    android:text="End Time" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/layout_bg">
+
+
+                                    <EditText
+                                        android:enabled="false"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:id="@+id/etTo"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_margin="4dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="1"
+                                        android:background="#FFFFFF"
+                                        android:ems="10"
+                                        android:fontFamily="@font/man_semi"
+                                        android:hint="Select Time To >"
+                                        android:maxLines="1"
+                                        android:paddingStart="10sp"
+                                        android:paddingEnd="10sp"
+                                        android:textSize="13sp"></EditText>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/man_semi"
+                            android:gravity="center"
+                            android:text="Remarks " />
+
+                        <LinearLayout
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/layout_bg">
+
+
+                            <EditText
+                                android:enabled="false"
+                                android:hint="No Remarks Indicated"
+                                android:singleLine="false"
+                                android:id="@+id/etRemarks"
+                                android:layout_width="0dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="4dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:ems="10"
+                                android:layout_height="150dp"
+                                android:inputType="text|textMultiLine|textCapSentences"
+                                android:gravity="top"
+                                android:fontFamily="@font/man_semi"
+                                android:paddingStart="10sp"
+                                android:paddingEnd="10sp"
+                                android:textSize="13sp"></EditText>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lnAcceptBid"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/layout_bg"
+                            android:backgroundTint="#191645"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/man_semi"
+                                android:gravity="center"
+                                android:text="Accept Bid"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <nl.dionsegijn.konfetti.KonfettiView
+                android:id="@+id/viewKonfetti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/default_pic"
+                app:civ_border_color="@color/gray_btn_bg_color"
+                app:civ_border_width="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdService4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:cardBackgroundColor="#F0F4F7"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/man_semi"
+                                android:text="John Mark Doe"
+                                android:textColor="#546679"
+                                android:textSize="12dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/lnReplyHolderButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_semi"
+                                    android:text="•"
+                                    android:textColor="#546679"
+                                    android:textSize="10dp" />
+
+
+                                <TextView
+                                    android:id="@+id/tvReply"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_bold"
+                                    android:text="@string/reply"
+                                    android:textColor="#191645"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lnMessageHolder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_semi"
+                                    android:text="•"
+                                    android:textColor="#546679"
+                                    android:textSize="10dp" />
+
+
+                                <TextView
+                                    android:id="@+id/tvMessage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_bold"
+                                    android:text="@string/message"
+                                    android:textColor="#191645"
+                                    android:textSize="12dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_reg"
+                            android:text="Back in May, when I hit 100 subscribers, I made a $0.69 bet with my friend about how many subscribers I would have by the end of the year. My bet was 50,000 so you know... I don't want to lose my 69 cents"
+                            android:textColor="#546679"
+                            android:textSize="11dp" />
+
+                        <LinearLayout
+                            android:id="@+id/lnBid"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:scaleType="centerInside"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/coin" />
+
+                                <TextView
+                                    android:id="@+id/tvBid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_semi"
+                                    android:text="700"
+                                    android:textColor="#164978"
+                                    android:textSize="11dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_marginLeft="25dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/man_semi"
+                            android:text="Just Now"
+                            android:textColor="#546679"
+                            android:textSize="11dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lnRemoveHolder"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvRemove"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/man_semi"
+                        android:text="Remove"
+                        android:textColor="#546679"
+                        android:textSize="11dp" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lnReplyHolder"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgProfile_sc"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/default_pic"
+                        app:civ_border_color="@color/gray_btn_bg_color"
+                        app:civ_border_width="0.5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            app:cardBackgroundColor="#FFFFFF"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvName_sc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/man_reg"
+                                        android:text="John Mark Doe"
+                                        android:textColor="#546679"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/man_semi"
+                                        android:text="•"
+                                        android:textColor="#546679"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/man_bold"
+                                        android:text="Freelancer"
+                                        android:textColor="#546679"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tvComment_sc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/man_reg"
+                                    android:text="Back in May, when I hit 100 subscribers, I made a $0.69 bet with my friend about how many subscribers I would have by the end of the year. My bet was 50,000 so you know... I don't want to lose my 69 cents"
+                                    android:textColor="#546679"
+                                    android:textSize="10dp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

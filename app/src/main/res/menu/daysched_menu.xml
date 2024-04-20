@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navEdit"
+        android:title="Edit Details" />
+
+    <item
+        android:id="@+id/navView"
+        android:title="View Info and Book" />
+
+    <item
+        android:id="@+id/navViewBid"
+        android:title="View Info and Booking Details" />
+
+</menu>

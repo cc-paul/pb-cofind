@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "712130808677",
+    "project_id": "eservicio-7835c",
+    "storage_bucket": "eservicio-7835c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712130808677:android:01cf438b9768f4fdd2af8c",
+        "android_client_info": {
+          "package_name": "com.pegp.eservicio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712130808677-v1temnhpkd4ibge2smjgelc9buh312qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXNVCcYDzs5LUNTdD8cIgfyyNyOSANTZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712130808677-v1temnhpkd4ibge2smjgelc9buh312qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

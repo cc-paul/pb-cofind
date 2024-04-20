@@ -1,0 +1,81 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/EServicio/app/src/main/res/drawable-v24/icn_more.xml" value="0.3525" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable-v24/icn_people.xml" value="0.2585" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable-v24/icn_road.xml" value="0.2585" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable-v24/layout_bg.xml" value="0.301" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable-v24/rounded_border_edittext.xml" value="0.2585" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_add_photo.xml" value="0.331" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_address.xml" value="0.331" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_address2.xml" value="0.354" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_align_left.xml" value="0.28" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_cake.xml" value="0.331" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_contact2.xml" value="0.354" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_edit.xml" value="0.369" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_gender.xml" value="0.331" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_more.xml" value="0.3525" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_password.xml" value="0.369" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_settings.xml" value="0.2585" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/icn_work.xml" value="0.354" />
+        <entry key="..\:/EServicio/app/src/main/res/drawable/rounded_dialog.xml" value="0.3225" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_address_selection.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_bid_details.xml" value="0.33" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_change_password.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_chatbox.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_customer_news_feed.xml" value="0.25" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_customer_post.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_data_privacy.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_day_schedule.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_feedback_form.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_forgot_password.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_freelance_messaging.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_gallery.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_login.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_menu_options.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_messaging.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_messenger.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_notification.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_profile.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_register.xml" value="0.31734960767218834" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_report.xml" value="0.33" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_reservation.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_schedule_list.xml" value="0.33" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_scheduler.xml" value="0.33" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_service_selection.xml" value="0.33" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/activity_update_profile.xml" value="0.33" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/bottom_applaud.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/bottom_comments.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/bottom_comments2.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/bottom_details.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/custom_view.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/dialog_reply.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/month_year_picker_dialog.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/progress.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_applaud.xml" value="0.6739336492890995" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_chats.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_comments.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_images.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_location.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_messagelist.xml" value="0.7815028901734105" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_notif.xml" value="0.67" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_profiles.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_profiles_customer.xml" value="0.47939068100358423" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_reservation.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_schedules.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_services.xml" value="0.36822916666666666" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/rv_validids.xml" value="0.5" />
+        <entry key="..\:/EServicio/app/src/main/res/layout/user_input_dialog_box.xml" value="0.33" />
+        <entry key="..\:/EServicio/app/src/main/res/menu/daysched_menu.xml" value="0.36822916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

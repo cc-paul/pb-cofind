@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EServicio</string>
+    <string name="gallery"><u>Upload your Valid IDs</u></string>
+    <string name="reply"><u>Reply</u></string>
+    <string name="message"><u>Message</u></string>
+</resources>
